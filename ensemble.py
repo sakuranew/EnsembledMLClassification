@@ -230,6 +230,7 @@ class Ensemble(object):
                         [good2dark,good2good,good2shallow,good2no,total_good_pre,good_recall,good_accuracy,good_f,good_no],
                         [shallow2dark,shallow2good,shallow2shallow,shallow2no,total__shallow_pre,shallow_recall,shallow_accuracy,shallow_f,shallow_no]])
             r=np.around(r,decimals=2)
+            print(r)
             df = pd.DataFrame(r,index=['dark_r','good_r','light_r'], columns=['dark_p','good_p','light_p','discard',"total",'recall',"accuracy",'fault',"dis-rate"])
             df["recall"] =df["recall"].apply(lambda x :str(x)+'%')
             df["accuracy"] =df["accuracy"].apply(lambda x :str(x)+'%')

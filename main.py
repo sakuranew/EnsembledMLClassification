@@ -22,7 +22,7 @@ import pickle
 """
 
 # with open('data_wob_100_ex.pkl', 'rb') as f:
-dim=150
+dim=200
 with open('w'+str(dim)+'.pkl', 'rb') as f:
 # with open('data_wob_100_gray.pkl', 'rb') as f:
 
